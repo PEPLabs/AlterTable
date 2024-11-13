@@ -57,6 +57,7 @@ public class Lab1Test {
             ps.executeUpdate();
 
         } catch (SQLException e) {
+            Assert.fail("Issue with lab setup: "+e.getMessage());
         }
     }
 
